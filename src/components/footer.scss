@@ -1,0 +1,159 @@
+.footer{
+	background-color: #1e2e4d;
+	text-align: center;
+	&__youtubeLink{
+		color:#fff;
+	}
+	&__wrapper{
+		padding: 80px 30px;
+		box-sizing: border-box;
+		display: flex;
+		max-width: 1080px;
+		margin: 0 auto;
+		width: 100%;
+		flex-direction: column;
+		&--bottom{
+			padding: 0;
+			flex-direction: column;
+		}
+	}
+	&__col{
+		flex: 1;
+		&--bottom{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+	&__intro{
+		padding-right: 20px;
+		font-size: 12px;
+		line-height: 25px;
+		color: #fff;
+	}
+	&__news{
+		font-size: 12px;
+		line-height: 20px;
+		color: #fff;	
+	}
+	&__list{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	&__title{
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 16px;
+		border-bottom: 2px solid #0390cd;
+		padding-bottom: 10px;
+	}
+	&__item{
+		max-width: 250px;
+		display: flex;
+		justify-content: center;
+		margin: 5px auto;
+		&--material{
+			height: 35px;
+			display: flex;
+		}
+	}
+	&__item-text{
+		color: #fff;
+		font-size: 12px;
+		line-height: 24px;
+	}
+	&__material-icon{
+		background-color: #566573;
+		box-sizing: border-box;
+		display: inline-flex;
+		width: 10%;
+		height: 100%;
+		justify-content: center;
+		width: 35px;
+	}
+	&__material{
+		background-color: #2c3e50;
+		height: 100%;
+		vertical-align: top;
+		font-size: 12px;
+		width: 100%;
+		height: 100%;
+		padding-left: 10px;
+	}
+	&__material-icon, &__material{
+		color: #fff;
+		display: inline-flex;
+		align-items: center;
+		svg{
+			color: #fff;
+		}
+	}
+	&__bottom{
+		display: flex;
+		justify-content: space-around;
+		background-color: #1a2741;
+		padding: 10px;
+	}
+	&__bottom-text{
+		color: #fff;
+		font-size: 12px;
+		line-height: 10px;
+		display: flex;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		vertical-align: center;
+		justify-content: center;
+		&--social{
+			justify-content: center;
+			margin-top: 10px;
+		}
+		svg{
+			margin: 0 2px 0 7px;
+			font-size: 25px;
+		}
+	}
+	&__layerUp{
+		margin-left: 5px;
+		font-size: 0;
+		display: inline-block;
+		width: 62px;
+		height: 13px;
+		background-image: url('../assets/images/layer.png');
+		background-size: contain;
+	}
+
+}
+
+@media (min-width: 992px){
+	.footer{
+		text-align: left;
+		&__wrapper{
+			flex-direction: row;
+			&--bottom{
+				flex-direction: row;
+			}
+		}
+		&__col{
+			margin-right: 30px;
+		}
+		&__item{
+			justify-content: flex-start;
+			margin: 5px 0;
+		}
+		&__bottom-text{
+			justify-content: flex-start;
+			&--social{
+				justify-content: flex-end;
+				margin: 0;
+			}
+		}
+		&__logo{
+			height: 78px;
+		}
+		.topBar__socials{
+			justify-content: left;
+		}
+	}
+}

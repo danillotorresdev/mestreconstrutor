@@ -1,0 +1,84 @@
+.banner{
+	height: calc(100vh - 35px);
+	max-height: 400px;
+	background: url('../assets/images/banner.png');
+	background-size: cover;
+	position: relative;
+	&__wrapper{
+	    position: absolute;
+	    width: 100%;
+	    left: 0;
+	    top: 0;
+	    height: 100%;
+	    z-index: 1;
+		overflow: hidden;
+
+	}
+	&__logoWrapper{
+		transition: .4s;
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+	&__logo{
+		width: 100%;
+	}
+	&__pedrasFundo,
+	&__pedreiro,
+	&__pedrasFrente{
+		position: absolute;
+		left: 0;
+		transition: .4s;
+		max-width: 100%;
+	}
+	&__pedreiro,
+	&__pedrasFrente{
+		bottom: 15%;
+	}
+	&__pedreiro{
+		max-height: 220px;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0%;
+	}
+}
+
+@media (min-width: 576px){}
+@media (min-width: 768px){
+	.banner{
+		max-height: none;
+		&__pedrasFrente{
+			bottom: 15%;
+		}
+		&__pedreiro{
+			max-height: 420px;
+		}
+		&__logoWrapper{
+			top: 12%;
+		}
+	}
+}
+@media (min-width: 992px){
+	.banner{
+		&__pedrasFrente{
+			bottom: 15%;
+		}
+		&__pedreiro{
+			max-height: 400px;
+		}
+	}
+}
+@media (min-width: 1200px){
+	.banner{
+		&__logoWrapper{
+			top: 12%;
+		}
+		&__pedrasFrente{
+			bottom: 10%;
+		}
+		&__pedreiro{
+
+			max-height: 85vh;
+		}
+	}
+}

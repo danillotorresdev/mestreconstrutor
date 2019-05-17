@@ -1,0 +1,77 @@
+.mapa{
+    display: flex;
+    flex-wrap: wrap;
+    &__coluna{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    &__colunaInterior{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        min-height: 320px;
+    }
+    &__estrela{
+        background-image: url('../assets/images/Estrela.png');
+        width: 38px;
+        height: 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        margin-bottom: 1em;
+        position: absolute;
+        top: -45px;
+        
+
+    }
+    &__titulo{
+        font-size: 25px;
+        text-transform: uppercase;
+        padding-top: 1em;
+        position: relative;
+       display: flex;
+       justify-content: center;
+       margin: 0;
+       color: #1a2741;
+       padding: 0 .1em;
+    }
+
+    &__texto{
+        padding: 0 1em;
+    }
+}
+@media(min-width: 768px){
+    .mapa{
+        &__coluna{
+            width: 100%;
+        }
+        &__colunaInterior{
+            width: 50%;
+            &--content{
+                padding: 2em;
+            }
+        }
+    }
+}
+@media(min-width: 1140px){
+    .mapa{
+        &__coluna{
+            width: 50%;
+        }
+        &__colunaInterior{
+            width: 50%;
+        }
+    }
+}
+
+.leaflet-marker-shadow{
+    background-image: url('../assets/images/pinMap.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }

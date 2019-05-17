@@ -1,0 +1,73 @@
+.porque{
+	display: flex;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 60px 20px;
+	position: relative;
+	flex-wrap: wrap;
+	&__intro, &__info{
+		flex: 1;
+		flex-basis: 100%;
+	}
+	&__intro{
+		margin-bottom: 40px;
+	}
+	&__pendente{
+		background-image: url('../assets/images/pendente.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 75px;
+		height: 150px;
+		position: absolute;
+		top: -5px;
+		left: 25px;
+	}
+	&__intro-link{
+		border-radius: 5px;
+		background-color: #009bdb;
+    	display: block;
+    	width: 75%;
+    	color: #ffffff;
+		line-height: 20.01px;
+		padding: 13px 0;
+		text-align: center;
+		box-sizing: border-box;
+		text-transform: uppercase;
+	}
+	&__intro{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.contentText{
+			width: 75%;
+			&__title{
+				text-transform: uppercase;
+				color: #1a2741;
+				font-size: 26px;
+				font-weight: 700;
+				line-height: 30px;
+				max-width: 75%;
+    			margin: 0 auto 10px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px){
+	.porque{
+		padding: 120px 0;		
+		&__intro, &__info{
+			margin: 0;
+			flex-basis: 50%;			
+		}
+		&__intro{
+			align-items: flex-end;
+			justify-content: center;
+		}
+		&__pendente{
+			width: 150px;
+			height: 300px;
+		}
+
+	}
+}

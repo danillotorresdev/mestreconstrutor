@@ -1,0 +1,87 @@
+.conversao{
+    position: relative;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    &__espatula{
+        position: absolute;
+        background-image: url(../assets/images/Espatula.png);
+        top: -80px;
+        left: 20px;
+        width: 100%;
+        height: 454px; 
+        background-repeat: no-repeat;
+        max-width: 280px;    
+        background-size: contain;    
+    }
+    &__capacete{
+        position: absolute;
+        background-image: url(../assets/images/Capacete.png);
+        bottom: -355px;
+        right: 0;
+        width: 100%;
+        height: 454px; 
+        max-width: 280px;
+        background-repeat: no-repeat;
+        background-size: contain;   
+        z-index: 1;       
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+    &__textInput{
+        padding: 1.3em;
+        border: 1px solid #009bdb;
+        border-radius: 5px;
+        color: #009bdb;
+        text-transform: uppercase;
+        &::placeholder { color: #009bdb;}
+    }
+    &__btn{
+        padding: .6em;
+        margin-top: .5em;
+        border: 1px solid #009bdb;
+        background-color: #009bdb;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .contentText{
+        &__title{
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #1a2741;
+            margin-bottom: 10px;
+        }
+        &__text{
+            width: 80%;
+            margin: 10px auto 0;
+        }
+    }
+}
+
+@media(min-width: 1140px){
+    .conversao{
+        &__espatula{
+            width: 431px;  
+            max-width: inherit;    
+            top: -100px;    
+        }
+        &__capacete{
+            width: 431px;  
+            max-width: inherit;              
+            bottom: -180px;       
+        }
+    }
+    
+}

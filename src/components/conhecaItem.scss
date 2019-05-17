@@ -1,0 +1,16 @@
+.conhecaItem{
+	margin: 10px 20px;
+	.circularIcon{
+		margin: 0 auto;
+		display: block;
+	}
+	.contentText{
+		max-width: 225px;
+		font-weight: 300;
+		&__title{
+			color: #1a2741;
+			font-size: 16px;
+			margin: 15px 0 0;
+		}
+	}
+}

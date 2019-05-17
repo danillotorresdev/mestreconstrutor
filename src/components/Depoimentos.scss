@@ -1,0 +1,123 @@
+.depoimentos{
+    padding: 120px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #1a2741;
+    text-align: center;
+    &__header{
+        width: 100%;
+        padding-bottom: 120px;
+        .contentText{
+            &__title{
+                text-transform: uppercase;
+                font-weight: 900;
+                color: #299cd7;
+                margin-top: 0;
+                margin-bottom: 10px; 
+
+            }
+            &__text{
+                padding-top: 1em;
+                width: 60%;
+                margin: 0 auto;
+                color: #b2b6be;
+            }
+        }
+    }
+    &__coluna{
+        width:100%; 
+
+    }
+}
+
+.depoimento{
+    margin: 0 auto;
+    width: 90%;
+    &__dir{
+        margin-top: 2em;
+    }
+    &__borderImg{
+        border: 1px solid #ccc;
+        border-radius: 130px;
+        width: 78px;
+        height: 78px;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+    &__imagem{
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 100%;
+    }
+    &__texto{
+        color: #b2b6be;
+        font-style: italic;
+        padding-bottom: 1em;
+    }
+    &__divisor{
+        border-top: 1px solid #ccc;
+        padding-top: .7em;
+        margin-bottom: 1em;
+        width: 250px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__nome{
+        color: #b2b6be;
+    }
+    &__cargo{
+        font-size: 14px;
+        color: #b2b6be;
+    }
+    .slick-dots li button:before{
+        border: 1px solid #ccc;
+        border-radius: 100px;
+        width: 7px;
+        height: 7px;
+        color: transparent;
+    }
+    .slick-dots li button:hover:before, .slick-dots li button:focus:before{
+        border: 1px solid yellow!important;
+    }
+    .slick-dots li.slick-active button:before{
+        border: 1px solid yellow;
+    }
+
+    
+}
+
+@media(min-width: 768px){
+
+}
+@media(min-width: 1140px){
+    .depoimentos{
+        &__coluna{
+            width:50%; 
+            &--lastChild{
+                margin-top: 0;
+            }
+            .depoimento{
+                float: right;
+                margin-right: 15px;
+                &__dir{
+                    margin-top: 0;
+                }
+            }
+            &--lastChild{
+                
+                .depoimento{
+                    float: left;
+                    margin-right: 0;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    .depoimento{
+        width: 65%;
+    }
+}

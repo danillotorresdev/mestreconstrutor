@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900');
+
+*{
+	box-sizing: border-box;
+}
+.backToTheTop {
+    position: fixed;
+    background: #fff;
+    bottom: 10%;
+    z-index: 1;
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+		border: transparent;
+		animation: backToTop .5s;
+		display: flex;
+    align-items: center;
+		justify-content: center;
+		box-shadow: 0px 0px 10px 2px #1e2e4d59;
+		scroll-behavior: smooth;
+		cursor: pointer;
+		
+		svg {
+			width: 30px;
+			height: 30px;
+		}
+	&--leave{
+		opacity: 0;
+		animation: leave .5s;
+	}
+	&:focus {
+    outline: none!important;
+	}
+}
+@keyframes backToTop{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes leave{
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h3, h2{
+	font-size: 30px;
+	font-family: Raleway;
+}
+p, span, a, div{
+	font-size: 16px;
+	color: #555;
+	font-family: Raleway
+}
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.leaflet-control-attribution.leaflet-control {
+	display: none;
+}
